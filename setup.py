@@ -50,10 +50,14 @@ setup(
     package_dir={'': 'src'},
     packages=find_packages('src'),
     install_requires=[
+        'flask',
     ],
     extras_require={
         'dev': [
             'python-boilerplate[dev]',
+        ],
+        'sqlite': [
+            'sqlite3',
         ],
     },
 
