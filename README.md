@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/mkazin/aws-sg-mngr.svg?branch=master)](https://travis-ci.org/mkazin/aws-sg-mngr)
 [![Code Climate](https://codeclimate.com/github/mkazin/aws-sg-mngr/badges/gpa.svg)](https://codeclimate.com/github/mkazin/aws-sg-mngr)
 [![Test Coverage](https://codeclimate.com/github/mkazin/aws-sg-mngr/badges/coverage.svg)](https://codeclimate.com/github/mkazin/aws-sg-mngr/coverage)
+[![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
 [![codecov](https://codecov.io/gh/mkazin/aws-sg-mngr/branch/master/graph/badge.svg)](https://codecov.io/gh/mkazin/aws-sg-mngr)
 [![Documentation Status](https://readthedocs.org/projects/aws-sg-mngr/badge/?version=latest)](http://aws-sg-mngr.readthedocs.io/en/latest/?badge=latest)
 
@@ -13,7 +14,7 @@ What does that mean?
 Basically, the goal is to provide a human-centric API, rather than assume a DevOps guru
 is managing security groups using a custom-built configuration-as-code system.
 
-## Goals 
+## Goals
 Among other things, it aims to:
 - Treat SG like a list of firewall rules (the only nesting is [SG] contains [Rules])
 - Get rid of AWS' excessive nesting (e.g. a nested "IpRanges" list within "IpPermissionsEgress")
@@ -30,7 +31,7 @@ A quick note on project scope.
 This project is intended to provide an API, as a replacement for AWS' API.
 
 Things that are not expected to be included here:
-- Clients! There are no plans to include web, mobile, or integrations (Slack, IFTTT, etc.) in this project. Those belong in separate GitHub projects, hopefully led by other maintainers who will do them justice. 
+- Clients! There are no plans to include web, mobile, or integrations (Slack, IFTTT, etc.) in this project. Those belong in separate GitHub projects, hopefully led by other maintainers who will do them justice.
 - Servers! Due to security needs (i.e. your AWS secret keys) a server of some sort will need to be deployed by users. That's entirely on you, with one minor exception- I will be providing the basic server implementation I will be using myself. It may not satisfy your needs, and will not be the focus of this project, but rather it will provide a reference implementation.
 
 That being said,
